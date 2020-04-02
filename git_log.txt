@@ -1,0 +1,328 @@
+Microsoft Windows [版本 6.3.9600]
+(c) 2013 Microsoft Corporation。保留所有权利。
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git init
+Initialized empty Git repository in E:/Moses/College_Life/Year2_2/Environmental Awareness (Wildlife and Human)
+ (Group 2) (1009) (Ms. Xiaohua LIU) [Semester 2 of 2019-2020]/Group Project/Materials/.git/
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git lfs track "publish.mp4"
+Tracking "publish.mp4"
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git add .gitattributes
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git add publish.mp4
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git commit -m "add publish mp4"
+[master (root-commit) 536df60] add publish mp4
+ 2 files changed, 4 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 publish.mp4
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git remote add "https://github.com/stefanSuYiGuo/ImageReposi
+tory.git"
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git remote add orgin "https://github.com/stefanSuYiGuo/Image
+Repository.git"
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push orgin master
+Uploading LFS objects: 100% (1/1), 254 MB | 198 KB/s, done
+To https://github.com/stefanSuYiGuo/ImageRepository.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/ImageRepository.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push --help
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=orgin/<branch> master
+
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git branch --set-upstream-to=orgin/master master
+error: the requested upstream branch 'orgin/master' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git remote add origin "https://github.com/stefanSuYiGuo/Imag
+eRepository.git"
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -u origin master
+Uploading LFS objects: 100% (1/1), 222 MB | 0 B/s, done
+To https://github.com/stefanSuYiGuo/ImageRepository.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/ImageRepository.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git init
+Reinitialized existing Git repository in E:/Moses/College_Life/Year2_2/Environmental Awareness (Wildlife and H
+uman) (Group 2) (1009) (Ms. Xiaohua LIU) [Semester 2 of 2019-2020]/Group Project/Materials/.git/
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git add .
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git commit -m 'add publish.mp4 file'
+error: pathspec 'file'' did not match any file(s) known to git
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git commit -m '添加publish.mp4文档'
+[master 145792f] '添加publish.mp4文档'
+ 12 files changed, 5440 insertions(+)
+ create mode 100644 Negative Stories/Brandy.docx
+ create mode 100644 Negative Stories/Human - Leopard Conflict _ WWF.pdf
+ create mode 100644 "Negative Stories/Human-Wildlife_Conflict An Interview with Dr. Hutchins \342\200\223 Nati
+onal Geographic.pdf"
+ create mode 100644 "Negative Stories/Human\342\200\223Wildlife Conflictand Coexistence.pdf"
+ create mode 100644 Negative Stories/Negative Cases.pdf
+ create mode 100644 Negative Stories/Negative_Cases.md
+ create mode 100644 Negative Stories/SOLVING_CONFLICTS_BETWEEN_ASIAN_BIG_CATS_AND_HUMANS.pdf
+ create mode 100644 Negative Stories/Strategiesto mitigate human-wildlife conflicts  Mozambique.pdf
+ create mode 100644 "Negative Stories/Taking Some of the Pain out of Human\342\200\223Wildlife Conflict - Scie
+ntific American.pdf"
+ create mode 100644 Negative Stories/Unpacking a Crisis of Human-Wildlife Conflict - siid.pdf
+ create mode 100644 Negative Stories/pic_1.jpg
+ create mode 100644 video_1.mp4
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git remore add origin "https://github.com/stefanSuYiGuo/uplo
+ad_files.git"
+git: 'remore' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git remote add origin "https://github.com/stefanSuYiGuo/uplo
+ad_files.git"
+fatal: remote origin already exists.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git remote rm origin
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git remote add origin "https://github.com/stefanSuYiGuo/uplo
+ad_files.git"
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -u origin master
+Uploading LFS objects:   0% (0/1), 222 MB | 424 KB/s, done
+Post https://lfs.github.com/stefanSuYiGuo/upload_files/objects/b208ed77529b39e87e82f237848beb448b4a6cc0bb84c42
+3172455d9ebc5fd4c/verify: dial tcp 13.250.168.23:443: connectex: No connection could be made because the targe
+t machine actively refused it.
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/upload_files.git'
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -u origin master
+Uploading LFS objects:   0% (0/1), 370 MB | 331 KB/s, done
+Post https://lfs.github.com/stefanSuYiGuo/upload_files/objects/b208ed77529b39e87e82f237848beb448b4a6cc0bb84c42
+3172455d9ebc5fd4c/verify: dial tcp 13.250.168.23:443: connectex: No connection could be made because the targe
+t machine actively refused it.
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/upload_files.git'
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -u origin master
+Uploading LFS objects: 100% (1/1), 223 MB | 906 KB/s, done
+To https://github.com/stefanSuYiGuo/upload_files.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/upload_files.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git fetch origin master
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/stefanSuYiGuo/upload_files
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git merge orgin master
+merge: orgin - not something we can merge
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -u origin master
+To https://github.com/stefanSuYiGuo/upload_files.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/upload_files.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git fetch origin master
+From https://github.com/stefanSuYiGuo/upload_files
+ * branch            master     -> FETCH_HEAD
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git merge orgin master
+merge: orgin - not something we can merge
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push origin master
+To https://github.com/stefanSuYiGuo/upload_files.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/upload_files.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git branch --set-upstream-to=origin/master master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -u origin master
+To https://github.com/stefanSuYiGuo/upload_files.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/stefanSuYiGuo/upload_files.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>git push -f origin master
+Uploading LFS objects: 100% (1/1), 222 MB | 0 B/s, done
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (19/19), 9.29 MiB | 3.05 MiB/s, done.
+Total 19 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/stefanSuYiGuo/upload_files.git
+ + 90766c7...145792f master -> master (forced update)
+
+E:\Moses\College_Life\Year2_2\Environmental Awareness (Wildlife and Human) (Group 2) (1009) (Ms. Xiaohua LIU)
+[Semester 2 of 2019-2020]\Group Project\Materials>
